@@ -1,24 +1,49 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# UNESCO 2026 - Chatbot Educativo
 
-# Run and deploy your AI Studio app
+Chatbot interactivo de UNEFCO para consultas sobre legalización de certificados, certificados supletorios y información general.
 
-This contains everything you need to run your app locally.
+## Arquitectura
 
-<<<<<<< HEAD
-View your app in AI Studio: https://ai.studio/apps/drive/1DsC9hpMPyjfY29dk6uD7yNuPYAg5Kkdx
-=======
-View your app in AI Studio: https://ai.studio/apps/drive/19EHPUyIZRdDFn7NXwEI_z9wCGA47Zq5v
->>>>>>> b1a163695bf999dd7635442fe3c4fae093cd338c
+```
+UNESCO-DOCS (Repositorio de Documentos)
+    │
+    │   ← Yo actualizo los documentos aquí
+    │
+    ▼
+UNESCO-2026 (Este Repo - Chat UI)
+    │
+    │   ← GitHub Pages sirve la interfaz
+    │
+    ▼
+┌─────────────┐
+│   Usuario   │
+└─────────────┘
+```
 
-## Run Locally
+## Documentación
 
-**Prerequisites:**  Node.js
+Los documentos fuente están en el repositorio [UNESCO-DOCS](https://github.com/GilmarCh1010/UNESCO-DOCS)
 
+### Carpetas del Vault UNESCO-DOCS
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+- `legalizacion/` - Requisitos para legalización de certificados
+- `supletorios/` - Requisitos para certificados supletorios
+- `general/` - Información general de UNEFCO
+- `certificados/` - Otros documentos sobre certificados
+
+## Tech Stack
+
+- **Frontend:** React + TypeScript + TailwindCSS + Vite
+- **Hosting:** GitHub Pages
+- **Docs:** Markdown en repositorio UNESCO-DOCS
+
+## Desarrollo Local
+
+```bash
+npm install
+npm run dev
+```
+
+---
+
+*UNEFCO - Educación para Bolivia*
