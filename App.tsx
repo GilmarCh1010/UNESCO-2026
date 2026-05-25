@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 
-// UNESCO API endpoint - VPS server (public IP)
+// UNEFCO API endpoint - VPS server (public IP)
 const API_URL = "http://85.31.230.163:8000";
 
 interface Message {
@@ -36,7 +36,7 @@ export default function App() {
     const welcomeMsg: Message = {
       id: Date.now(),
       type: 'incoming',
-      text: '👋 ¡Bienvenido al Asistente UNESCO 2026!\n\nSoy tu asistente virtual de UNEFCO. Puedo ayudarte con información sobre:\n\n📋 Legalización de certificados\n📝 Certificados supletorios\n💰 Costos y depósitos bancarios\n📅 Fechas y plazos\n\n¿En qué puedo ayudarte hoy?'
+      text: '👋 ¡Bienvenido al Asistente UNEFCO 2026!\n\nSoy tu asistente virtual de UNEFCO. Puedo ayudarte con información sobre:\n\n📋 Legalización de certificados\n📝 Certificados supletorios\n💰 Costos y depósitos bancarios\n📅 Fechas y plazos\n\n¿En qué puedo ayudarte hoy?'
     };
     setMessages([welcomeMsg]);
   }, []);
@@ -93,7 +93,7 @@ export default function App() {
             <div className="flex items-center">
                 <BotAvatar />
                 <div>
-                  <h3 className="font-bold text-lg">UNESCO 2026</h3>
+                  <h3 className="font-bold text-lg">UNEFCO 2026</h3>
                   <p className="text-sm opacity-90">Asistente Educativo</p>
                 </div>
             </div>
