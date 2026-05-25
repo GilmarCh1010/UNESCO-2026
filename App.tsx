@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 
-// UNESCO API endpoint - VPS server
+// UNESCO API endpoint - VPS server (public IP)
 const API_URL = "http://85.31.230.163:8000";
 
 interface Message {
